@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <style>
+        img{
+            width: 60px;
+            margin-left: 45px;
+        }
+        h3{
+            color: rgb(73, 219, 232);
+            text-align: center;
+        }
+        h2{
+            color: rgb(252, 0, 0);
+            text-align: center;
+        }
+       
+      
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong><h3>Dear My Love PUJA,</h3></strong>
+                        <p>
+                         <h2><strong>I LOVE YOU SO MUCH</strong></h2>  
+                        </p>
+                        <img src="https://th.bing.com/th/id/OIP.xQZTFDzj8IkLIBNuf8ER5gHaIE?w=193&h=210&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="couple cartoon img">
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
